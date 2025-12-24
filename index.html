@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        const isLogin = JSON.parse(localStorage.getItem('isLogin'))
+        if(isLogin){
+            window.location.href = "/public/dashboard.html";
+        }
+        else{
+            window.location.href = "/pages/login.html";
+        }
+    </script>
 </body>
 </html>
